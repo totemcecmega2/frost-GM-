@@ -1,0 +1,1312 @@
+local ScreenGui = Instance.new("ScreenGui")
+
+local Frame = Instance.new("Frame")
+
+local Frame2 = Instance.new("Frame")
+
+local B1 = Instance.new("TextButton")
+
+local box = Instance.new("TextBox")
+
+local box2 = Instance.new("TextBox")
+
+local B2 = Instance.new("TextButton")
+
+local WalkSpeedControl = Instance.new("TextLabel")
+
+local Close = Instance.new("TextButton")
+
+local Destroy = Instance.new("TextButton")
+
+local Label = Instance.new("TextLabel")
+
+local Open = Instance.new("TextButton")
+
+local B3 = Instance.new("TextButton")
+
+local B4 = Instance.new("TextButton")
+
+local Menu = Instance.new("TextButton")
+
+local BC = Instance.new("TextButton")
+
+local BG = Instance.new("TextButton")
+
+local BM = Instance.new("TextButton")
+
+local WalkSpeedControl2 = Instance.new("TextLabel")
+
+local WalkSpeedControl3 = Instance.new("TextLabel")
+
+
+
+ScreenGui.Parent = game.CoreGui
+
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+
+Frame.Parent = ScreenGui
+
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+
+Frame.BorderSizePixel = 3
+
+Frame.Position = UDim2.new(0, 200, 0.270377755, 0)
+
+Frame.Size = UDim2.new(0, 350, 0, 200)
+
+Frame.Active = true
+
+Frame.Draggable = true
+
+Frame.Visible = true
+
+
+
+Frame2.Parent = Frame
+
+Frame2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+Frame2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+
+Frame2.BorderSizePixel = 3
+
+Frame2.Position = UDim2.new(0, 0, 0.125, 0)
+
+Frame2.Size = UDim2.new(0, 0, 0, 175)
+
+Frame2.Active = true
+
+Frame2.Draggable = false
+
+Frame2.Visible = true
+
+
+
+B1.Parent = Frame
+
+B1.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+B1.BorderSizePixel = 3
+
+B1.Position = UDim2.new(0, 190, 0.2, 0)
+
+B1.Size = UDim2.new(0, 150, 0, 25)
+
+B1.Font = Enum.Font.SourceSans
+
+B1.Text = "Set Jump"
+
+B1.TextColor3 = Color3.fromRGB(200, 200, 200)
+
+B1.TextScaled = true
+
+B1.TextSize = 14.000
+
+B1.TextWrapped = true
+
+
+
+B2.Parent = Frame
+
+B2.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+B2.BorderSizePixel = 3
+
+B2.Position = UDim2.new(0, 15, 0.2, 0)
+
+B2.Size = UDim2.new(0, 150, 0, 25)
+
+B2.Font = Enum.Font.SourceSans
+
+B2.Text = "Set Speed"
+
+B2.TextColor3 = Color3.fromRGB(200, 200, 200)
+
+B2.TextScaled = true
+
+B2.TextSize = 14.000
+
+B2.TextWrapped = true
+
+-- B2 text box
+
+box.Name = "box"
+
+box.Parent = B2
+
+box.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+box.BorderColor3 = Color3.fromRGB(255, 255, 255)
+
+box.Position = UDim2.new(0, 0, 1, 0)
+
+box.Size = UDim2.new(0.999999583, 0, 0.733662164, 0)
+
+box.Font = Enum.Font.SourceSans
+
+box.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+
+box.PlaceholderText = "Speed power here"
+
+box.Text = ""
+
+box.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+box.TextSize = 14.000
+
+
+
+--B1 text box
+
+box2.Name = "box"
+
+box2.Parent = B1
+
+box2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+box2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+
+box2.Position = UDim2.new(0, 0, 1, 0)
+
+box2.Size = UDim2.new(0.999999583, 0, 0.733662164, 0)
+
+box2.Font = Enum.Font.SourceSans
+
+box2.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+
+box2.PlaceholderText = "Jump power here"
+
+box2.Text = ""
+
+box2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+box2.TextSize = 14.000
+
+
+
+B3.Parent = Frame
+
+B3.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+B3.BorderSizePixel = 3
+
+B3.Position = UDim2.new(0, 15, 0.5, 0)
+
+B3.Size = UDim2.new(0, 150, 0, 25)
+
+B3.Font = Enum.Font.SourceSans
+
+B3.Text = "Fly"
+
+B3.TextColor3 = Color3.fromRGB(200, 200, 200)
+
+B3.TextScaled = true
+
+B3.TextSize = 14.000
+
+B3.TextWrapped = true
+
+
+
+B4.Parent = Frame
+
+B4.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+B4.BorderSizePixel = 3
+
+B4.Position = UDim2.new(0, 190, 0.5, 0)
+
+B4.Size = UDim2.new(0, 150, 0, 25)
+
+B4.Font = Enum.Font.SourceSans
+
+B4.Text = "Dark Dex"
+
+B4.TextColor3 = Color3.fromRGB(200, 200, 200)
+
+B4.TextScaled = true
+
+B4.TextSize = 14.000
+
+B4.TextWrapped = true
+
+
+
+BC.Parent = Frame2
+
+BC.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+BC.BorderSizePixel = 3
+
+BC.Position = UDim2.new(0, 0, 0.2, 0)
+
+BC.Size = UDim2.new(0, 0, 0, 25)
+
+BC.Font = Enum.Font.SourceSans
+
+BC.Text = "Credits"
+
+BC.TextColor3 = Color3.fromRGB(200, 200, 200)
+
+BC.TextScaled = true
+
+BC.TextSize = 14.000
+
+BC.TextWrapped = true
+
+
+
+BM.Parent = Frame2
+
+BM.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+BM.BorderSizePixel = 3
+
+BM.Position = UDim2.new(0, 0, 0.5, 0)
+
+BM.Size = UDim2.new(0, 0, 0, 25)
+
+BM.Font = Enum.Font.SourceSans
+
+BM.Text = "Main Scripts"
+
+BM.TextColor3 = Color3.fromRGB(200, 200, 200)
+
+BM.TextScaled = true
+
+BM.TextSize = 14.000
+
+BM.TextWrapped = true
+
+
+
+WalkSpeedControl.Name = "WalkSpeed Control"
+
+WalkSpeedControl.Parent = Frame
+
+WalkSpeedControl.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+
+WalkSpeedControl.BorderSizePixel = 3
+
+WalkSpeedControl.Position = UDim2.new(0.000976324081, 0, -0.00234955549, 0)
+
+WalkSpeedControl.Size = UDim2.new(0, 350, 0, 25)
+
+WalkSpeedControl.Font = Enum.Font.Highway
+
+WalkSpeedControl.Text = "frost GM"
+
+WalkSpeedControl.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+WalkSpeedControl.TextScaled = true
+
+WalkSpeedControl.TextSize = 14.000
+
+WalkSpeedControl.TextWrapped = true
+
+WalkSpeedControl.Transparency = 0
+
+
+
+WalkSpeedControl2.Name = "WalkSpeed Control"
+
+WalkSpeedControl2.Parent = Frame2
+
+WalkSpeedControl2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+
+WalkSpeedControl2.BorderSizePixel = 3
+
+WalkSpeedControl2.Position = UDim2.new(0, 125, 0.5, 0)
+
+WalkSpeedControl2.Size = UDim2.new(0, 200, 0, 25)
+
+WalkSpeedControl2.Font = Enum.Font.Highway
+
+WalkSpeedControl2.Text = "Discord: goodmaster#2082"
+
+WalkSpeedControl2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+WalkSpeedControl2.TextScaled = true
+
+WalkSpeedControl2.TextSize = 14.000
+
+WalkSpeedControl2.TextWrapped = true
+
+WalkSpeedControl2.Visible = false
+
+
+
+WalkSpeedControl3.Name = "WalkSpeed Control"
+
+WalkSpeedControl3.Parent = Frame2
+
+WalkSpeedControl3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+
+WalkSpeedControl3.BorderSizePixel = 3
+
+WalkSpeedControl3.Position = UDim2.new(0, 125, 0.2, 0)
+
+WalkSpeedControl3.Size = UDim2.new(0, 200, 0, 25)
+
+WalkSpeedControl3.Font = Enum.Font.Highway
+
+WalkSpeedControl3.Text = "YouTube: GoodMaker"
+
+WalkSpeedControl3.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+WalkSpeedControl3.TextScaled = true
+
+WalkSpeedControl3.TextSize = 14.000
+
+WalkSpeedControl3.TextWrapped = true
+
+WalkSpeedControl3.Visible = false
+
+
+
+Close.Name = "Close"
+
+Close.Parent = Frame
+
+Close.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+Close.Position = UDim2.new(0, 290, 0, 0)
+
+Close.Size = UDim2.new(0, 30, 0, 25)
+
+Close.Font = Enum.Font.SourceSans
+
+Close.Text = "—"
+
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+Close.TextScaled = true
+
+Close.TextSize = 104.000
+
+Close.TextWrapped = true
+
+
+
+Menu.Name = "Menu"
+
+Menu.Parent = Frame
+
+Menu.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+Menu.Position = UDim2.new(0, 0, 0, 0)
+
+Menu.Size = UDim2.new(0, 30, 0, 25)
+
+Menu.Font = Enum.Font.SourceSans
+
+Menu.Text = ">"
+
+Menu.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+Menu.TextScaled = true
+
+Menu.TextSize = 104.000
+
+Menu.TextWrapped = true
+
+
+
+Destroy.Name = "Destroy"
+
+Destroy.Parent = Frame
+
+Destroy.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+Destroy.Position = UDim2.new(0, 320, 0, 0)
+
+Destroy.Size = UDim2.new(0, 30, 0, 25)
+
+Destroy.Font = Enum.Font.SourceSans
+
+Destroy.Text = "X"
+
+Destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+Destroy.TextScaled = true
+
+Destroy.TextSize = 104.000
+
+Destroy.TextWrapped = true
+
+
+
+local function QDTZQ_fake_script() -- B1.LocalScript 
+
+	local script = Instance.new('LocalScript', B2)
+	
+
+	
+
+	script.Parent.MouseButton1Click:Connect(function() --- when the button is clicked it calls this 
+
+local Text = box.text
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Text
+
+
+
+	end)
+
+end
+
+coroutine.wrap(QDTZQ_fake_script)()
+
+local function YDSA_fake_script() -- Close.LocalScript 
+
+	local script = Instance.new('LocalScript', Close)
+
+local use = 0
+
+	
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+	if use == 0 then
+
+	Frame:TweenSize(
+
+UDim2.new(0, 350, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+	B1:TweenSize(
+
+UDim2.new(0, 150, 0, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B2:TweenSize(
+
+UDim2.new(0, 150, 0, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B3:TweenSize(
+
+UDim2.new(0, 150, 0, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B4:TweenSize(
+
+UDim2.new(0, 150, 0, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+Frame2:TweenSize(
+
+UDim2.new(0, 0, 0, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+Menu:TweenSize(
+
+UDim2.new(0, 0, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+BC:TweenSize(
+
+UDim2.new(0, 0, 0, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+BM:TweenSize(
+
+UDim2.new(0, 0, 0, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+use = 1
+
+elseif use == 1 then
+
+	Frame:TweenSize(
+
+UDim2.new(0, 350, 0, 200),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+	B1:TweenSize(
+
+UDim2.new(0, 150, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B2:TweenSize(
+
+UDim2.new(0, 150, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B3:TweenSize(
+
+UDim2.new(0, 150, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B4:TweenSize(
+
+UDim2.new(0, 150, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B3:TweenSize(
+
+UDim2.new(0, 150, 0, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+Frame2:TweenSize(
+
+UDim2.new(0, 0, 0, 175),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+Menu:TweenSize(
+
+UDim2.new(0, 30, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+BC:TweenSize(
+
+UDim2.new(0, 0, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+BC:TweenPosition(
+
+UDim2.new(0, 0, 0.2, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+BM:TweenSize(
+
+UDim2.new(0, 0, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+BM:TweenPosition(
+
+UDim2.new(0, 0, 0.5, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+use = 0
+
+end
+
+
+
+
+
+
+
+
+
+	end)
+
+end
+
+coroutine.wrap(YDSA_fake_script)()
+
+local function ZFFOR_fake_script() -- B1.LocalScript 
+
+	local script = Instance.new('LocalScript', B1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+local text2 = box2.text
+
+
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = text2
+
+
+
+end)
+
+end
+
+coroutine.wrap(ZFFOR_fake_script)()
+
+local function FLMB_fake_script() -- B3.LocalScript 
+
+	local script = Instance.new('LocalScript', B3)
+
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/totemcecmega2/fly-gui-v3/main/Fly%20gui"))()
+
+
+
+end)
+
+end
+
+coroutine.wrap(FLMB_fake_script)()
+
+local function DSTRY_fake_script() -- Destroy.LocalScript 
+
+	local script = Instance.new('LocalScript', Destroy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+ScreenGui:Destroy()
+
+
+
+
+
+
+
+end)
+
+end
+
+coroutine.wrap(DSTRY_fake_script)()
+
+local function DRKDX_fake_script() -- B4.LocalScript 
+
+	local script = Instance.new('LocalScript', B4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+
+
+
+end)
+
+end
+
+coroutine.wrap(DRKDX_fake_script)()
+
+local function OPNMN_fake_script() -- Menu.LocalScript 
+
+	local script = Instance.new('LocalScript', Menu)
+
+local use2 = 0
+
+script.Parent.MouseButton1Click:Connect(function()
+
+if use2 == 0 then
+
+Frame2:TweenSize(
+
+UDim2.new(0, 100, 0, 175),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B3:TweenSize(
+
+UDim2.new(0, 50, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+B3:TweenPosition(
+
+UDim2.new(0, 125, 0.5, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B2:TweenSize(
+
+UDim2.new(0, 50, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+B2:TweenPosition(
+
+UDim2.new(0, 125, 0.2, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+BC:TweenSize(
+
+UDim2.new(0, 80, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+BC:TweenPosition(
+
+UDim2.new(0, 10, 0.2, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+BM:TweenSize(
+
+UDim2.new(0, 80, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+BM:TweenPosition(
+
+UDim2.new(0, 10, 0.5, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+use2 = 1
+
+elseif use2 == 1 then
+
+Frame2:TweenSize(
+
+UDim2.new(0, 0, 0, 175),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B2:TweenSize(
+
+UDim2.new(0, 150, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+B2:TweenPosition(
+
+UDim2.new(0, 15, 0.2, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+B3:TweenSize(
+
+UDim2.new(0, 150, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+B3:TweenPosition(
+
+UDim2.new(0, 15, 0.5, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+BC:TweenSize(
+
+UDim2.new(0, 0, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+BC:TweenPosition(
+
+UDim2.new(0, 0, 0.2, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+BM:TweenSize(
+
+UDim2.new(0, 0, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+BM:TweenPosition(
+
+UDim2.new(0, 0, 0.5, 0),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+use2 = 0
+
+end
+
+
+
+
+
+end)
+
+end
+
+coroutine.wrap(OPNMN_fake_script)()
+
+local function HDFN_fake_script() -- BC.LocalScript 
+
+	local script = Instance.new('LocalScript', BC)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+
+
+WalkSpeedControl:TweenSize(
+
+UDim2.new(0, 350, 0, 200),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+wait(1.5)
+
+WalkSpeedControl2.Visible = true
+
+WalkSpeedControl3.Visible = true
+
+B1.Visible = false
+
+B2.Visible = false
+
+B3.Visible = false
+
+B4.Visible = falss
+
+WalkSpeedControl:TweenSize(
+
+UDim2.new(0, 350, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+end)
+
+end
+
+coroutine.wrap(HDFN_fake_script)()
+
+local function MNSCP_fake_script() -- BM.LocalScript 
+
+	local script = Instance.new('LocalScript', BM)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+
+
+WalkSpeedControl:TweenSize(
+
+UDim2.new(0, 350, 0, 200),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+wait(1.5)
+
+WalkSpeedControl2.Visible = false
+
+WalkSpeedControl3.Visible = false
+
+B1.Visible = true
+
+B2.Visible = true
+
+B3.Visible = true
+
+B4.Visible = true
+
+WalkSpeedControl:TweenSize(
+
+UDim2.new(0, 350, 0, 25),
+
+"Out",
+
+"Quad",
+
+1,
+
+false
+
+)
+
+
+
+end)
+
+end
+
+coroutine.wrap(MNSCP_fake_script)()
